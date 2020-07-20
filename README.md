@@ -1,2 +1,2 @@
 # web-dev-tutorial
-Web Development Short Course
+Web Development Course Material
