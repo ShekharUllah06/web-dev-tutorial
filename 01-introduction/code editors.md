@@ -1,6 +1,6 @@
-#Code editor setup
+# Code editor setup
 
-##VSCode
+## VSCode
 
 In this course I use VSCode. You can download VSCode from [here.](https://code.visualstudio.com/)
 
