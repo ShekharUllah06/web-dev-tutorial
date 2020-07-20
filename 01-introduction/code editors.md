@@ -15,6 +15,8 @@ I use the `Oceanic Next` theme for VSCode + dimmed bg version for better looking
 
 `Color Highlight` [Link &rarr;](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight&ssr=false#review-details)
 
-`Path Intellisense` to autocomplete filenames. [Link &rarr;](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
+`Path Intellisense` [Link &rarr;](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
 
-`Prettier` to automatically format code. [Link &rarr;](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+`Prettier` [Link &rarr;](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+
+`Auto Rename Tag` [Link &rarr;](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
