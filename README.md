@@ -1,2 +1,1 @@
-# web-dev-tutorial
-Web Development Course Material
+# Web Development Course Material
