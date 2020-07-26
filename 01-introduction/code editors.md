@@ -20,3 +20,5 @@ I use the `Oceanic Next` theme for VSCode + dimmed bg version for better looking
 `Prettier` [Link &rarr;](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
 `Auto Rename Tag` [Link &rarr;](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
+
+`Live Server` [Link &rarr;](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
