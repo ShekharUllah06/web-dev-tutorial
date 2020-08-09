@@ -6,28 +6,28 @@
  * Function non data structure, though it also answers for typeof operator: typeof instance === "function". This answer is done as a special shorthand for Functions, though every Function constructor is derived from Object constructor.
  */
 
- /*
-  * Six Data Types that are primitives
-  * undefined : typeof instance === "undefined"
-  * Boolean : typeof instance === "boolean"
-  * Number : typeof instance === "number"
-  * String : typeof instance === "string"
-  * BigInt : typeof instance === "bigint"
-  * Symbol : typeof instance === "symbol"
-  */
+/*
+ * Six Data Types that are primitives
+ * undefined : typeof instance === "undefined"
+ * Boolean : typeof instance === "boolean"
+ * Number : typeof instance === "number"
+ * String : typeof instance === "string"
+ * BigInt : typeof instance === "bigint"
+ * Symbol : typeof instance === "symbol"
+ */
 
-  // Number
-  var length = 16; 
-  console.log(length);
+// Number
+var length = 16;
+console.log(length);
 
-  // String
-  var lastName = "Johnson";
-  console.log(lastName);
+// String
+var lastName = "Johnson";
+console.log(lastName);
 
-  // Boolean
-  var isStudent=true;
-  console.log(isStudent);
+// Boolean
+var isStudent = true;
+console.log(isStudent);
 
- // BigInt. A bigint is created by appending n to the end of an integer literal or by calling the function BigInt that creates bigints from strings, numbers etc.
-  var myBigNumber = 1234567890123456789012345678901234567890n;
-  console.log(myBigNumber);
+// BigInt. A bigint is created by appending n to the end of an integer literal or by calling the function BigInt that creates bigints from strings, numbers etc.
+var myBigNumber = 1234567890123456789012345678901234567890n;
+console.log(myBigNumber);
