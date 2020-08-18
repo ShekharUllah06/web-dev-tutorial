@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>IFrame</title>
+  </head>
+  <body>
+    <h1>Images</h1>
+    <img src="blackrose.jpg" alt="blackrose" width="500" height="600" />
+
+    <h1>Image Map</h1>
+    <img src="programmertable.jpg" usemap="#image-map">
+
+    <map name="image-map">
+        <area target="_blank" alt="Computer" title="Computer" href="https://en.wikipedia.org/wiki/Computer" coords="716,106,308,638" shape="rect">
+        <area target="_blank" alt="Tea" title="Tea" href="https://en.wikipedia.org/wiki/Tea" coords="137,274,76" shape="circle">
+        <area target="_blank" alt="Mobile" title="Mobile" href="https://en.wikipedia.org/wiki/Mobile_phone" coords="107,439,170,421,218,565,147,585" shape="poly">
+    </map>
+
+    <h1>The figure and figcaption element</h1>
+
+    <figure>
+        <img src="blackrose.jpg" alt="blackrose" style="width:100%">
+        <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+    </figure>
+
+    <h1>The picture element</h1>
+
+    <p>Resize the browser window to load different images.</p>
+
+    <picture>
+        <source media="(min-width:650px)" srcset="img/whitelily.jpg">
+        <source media="(min-width:465px)" srcset="img/redrose.jpg">
+        <img src="img/lotus.jpg" alt="Flowers" style="width:auto;">
+    </picture>
+
+    <h1>The svg element</h1>
+
+    <svg width="100" height="100">
+      <circle cx="50" cy="50" r="40" stroke="black" stroke-width="4" fill="red" />
+      Sorry, your browser does not support inline SVG.
+    </svg>
+     
+ 
+
+
+  </body>
+</html>
