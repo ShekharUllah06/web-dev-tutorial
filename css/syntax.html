@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS - Syntax</title>
+    <!--
+            A CSS comprises of style rules that are interpreted by the browser and then applied to the corresponding elements in your document. A style rule is made of three parts −
+
+            − A selector is an HTML tag at which a style will be applied. This could be any tag like <h1> or <table> etc.
+
+            Property − A property is a type of attribute of HTML tag. Put simply, all the HTML attributes are converted into CSS properties. They could be color, border etc.
+
+            Value − Values are assigned to properties. For example, color property can have value either red or #F1F1F1 etc.
+
+            You can put CSS Style Rule Syntax as follows −
+
+            selector { property: value }
+    -->
+
+    <style>
+        /*
+         * Type Selector
+         * Also known as the Element Selector, 
+         * the Type Selector targets all elements that match 
+         * the given node name.
+        */
+        body {
+          background-color: linen;
+        }
+        h1 {
+          color: maroon;
+          margin-left: 40px;
+          text-align: center;
+        }
+        /*
+         * The ID Selector selects the HTML element based on the value contained in its id attribute. 
+         * An ID Selector is used when you want to target 
+         * one specific element on the web page.
+         *
+         * #id_value { css style properties }
+        */
+        #ex1{
+           margin: 20px; 
+           text-align: justify;
+           border: solid;
+           padding: 10px;
+        }
+        #floatex{
+            float:right;
+            width:70px;
+            height:70px;
+            margin-left:5px;        
+        }
+        /*
+         * Some say the Class Selector is the most useful of the 
+         * available CSS Selectors. 
+         * In fact, almost all modern CSS Frameworks allow you to 
+         * style elements by simply applying a class name. 
+         * It is helpful to have many elements on the same page that 
+         * share a given class. This helps to allow the reuse of styles 
+         * leading to less repetition in the CSS code.
+         *
+         * .class_name { css style properties }
+        */
+
+        .floatimg{
+            text-align: justify;
+            margin: 20px;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>CSS - Syntax</h1>
+
+    <div id="ex1">
+        Lorem ipsum dolor sit amet, 
+        consectetur adipiscing elit. 
+        Vivamus iaculis leo ut accumsan consectetur. 
+        Nunc metus elit, vehicula non volutpat eu, 
+        finibus at purus. Proin ultricies nunc urna, 
+        a ornare risus dictum ut. 
+        Pellentesque elementum lectus at augue mollis, 
+        id efficitur diam volutpat. Mauris quis lobortis diam. 
+        Donec elementum purus in erat sollicitudin accumsan. 
+        Phasellus dolor felis, consequat consequat nisl quis, 
+        pellentesque varius justo. Integer tempor arcu accumsan 
+        augue vehicula, consequat facilisis sem feugiat. 
+        Nam vitae ex ac magna lobortis faucibus. 
+        Nam porttitor leo vitae finibus ornare. 
+        Proin malesuada lacus nec risus tempus ultrices sed ut libero. 
+        estibulum lacinia iaculis risus, ac auctor tellus congue viverra. 
+        Vestibulum in neque eget felis semper tempus sed et neque. 
+        Praesent lacinia a nulla ac rutrum. 
+        Ut convallis velit eu est malesuada viverra.
+    </div>
+    <div class="floatimg">
+        <img id="floatex" src="../html/img/redrose.jpg" alt="redrose">
+        Lorem ipsum dolor sit amet, 
+        consectetur adipiscing elit. 
+        Vivamus iaculis leo ut accumsan consectetur. 
+        Nunc metus elit, vehicula non volutpat eu, 
+        finibus at purus. Proin ultricies nunc urna, 
+        a ornare risus dictum ut. 
+        Pellentesque elementum lectus at augue mollis, 
+        id efficitur diam volutpat. Mauris quis lobortis diam. 
+        Donec elementum purus in erat sollicitudin accumsan. 
+        Phasellus dolor felis, consequat consequat nisl quis, 
+        pellentesque varius justo. Integer tempor arcu accumsan 
+        augue vehicula, consequat facilisis sem feugiat. 
+        Nam vitae ex ac magna lobortis faucibus. 
+        Nam porttitor leo vitae finibus ornare. 
+        Proin malesuada lacus nec risus tempus ultrices sed ut libero. 
+        estibulum lacinia iaculis risus, ac auctor tellus congue viverra. 
+        Vestibulum in neque eget felis semper tempus sed et neque. 
+        Praesent lacinia a nulla ac rutrum. 
+        Ut convallis velit eu est malesuada viverra.
+    </div>
+  </body>
+</html>
