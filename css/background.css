@@ -1,0 +1,28 @@
+/*
+ * CSS background property is used to define the background effects on element. There are 5 CSS background properties that affects the HTML elements:
+ *
+ * background-color
+ * background-image
+ * background-repeat
+ * background-attachment
+ * background-position
+ */   
+
+.bgColorTest{
+    background-color: blanchedalmond;
+    margin:10px; 
+}
+.bgImageTest{
+    background-image: url('../html/img/lotus.jpg');
+    background-repeat: repeat; 
+    color: red;
+    margin:10px; 
+}
+.bgAttachmentTest{
+    width: 200px;
+    background: white url('../html/img/redrose.jpg');  
+    background-repeat: no-repeat;  
+    background-attachment: fixed;  
+    background-size: 5cm;
+    margin:10px; 
+}
