@@ -66,6 +66,47 @@
             text-align: justify;
             margin: 20px;
         }
+        /*
+         * The CSS Universal Selector
+        */
+        * {
+            text-align: center;
+            color: blue;
+        }
+
+        /*
+        CSS Combinators
+        A combinator is something that explains the relationship between the selectors.
+
+        A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a combinator.
+
+        There are four different combinators in CSS:
+
+        descendant selector (space)
+        child selector (>)
+        adjacent sibling selector (+)
+        general sibling selector (~)
+        */
+
+        /*
+        Descendant Selector
+        The descendant selector matches all elements that are descendants of a specified element.
+
+        The following example selects all <p> elements inside <div> elements: 
+        */
+        div p {
+          background-color: yellow;
+        }
+
+        /*
+        Child Selector
+        The child selector selects all elements that are the children of a specified element.
+
+        The following example selects all <p> elements that are children of a <div> element:
+        */
+        div > p {
+          background-color: red;
+        }
     </style>
   </head>
   <body>
@@ -113,6 +154,28 @@
         Vestibulum in neque eget felis semper tempus sed et neque. 
         Praesent lacinia a nulla ac rutrum. 
         Ut convallis velit eu est malesuada viverra.
+    </div>
+
+    <div>
+      <h1>Descendant Selector</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus iaculis leo ut accumsan consectetur. Nunc metus elit, vehicula non volutpat eu, finibus at purus. Proin ultricies nunc urna, a ornare risus dictum ut. Pellentesque elementum lectus at augue mollis, id efficitur diam volutpat. Mauris quis lobortis diam. Donec elementum purus in erat sollicitudin accumsan. Phasellus dolor felis, consequat consequat nisl quis, pellentesque varius justo. Integer tempor arcu accumsan augue vehicula, consequat facilisis sem feugiat. Nam vitae ex ac magna lobortis faucibus. Nam porttitor leo vitae finibus ornare. Proin malesuada lacus nec risus tempus ultrices sed ut libero. estibulum lacinia iaculis risus, ac auctor tellus congue viverra. Vestibulum in neque eget felis semper tempus sed et neque. Praesent lacinia a nulla ac rutrum. Ut convallis velit eu est malesuada viverra.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus iaculis leo ut accumsan consectetur. Nunc metus elit, vehicula non volutpat eu, finibus at purus. Proin ultricies nunc urna, a ornare risus dictum ut. Pellentesque elementum lectus at augue mollis, id efficitur diam volutpat. Mauris quis lobortis diam. Donec elementum purus in erat sollicitudin accumsan. Phasellus dolor felis, consequat consequat nisl quis, pellentesque varius justo. Integer tempor arcu accumsan augue vehicula, consequat facilisis sem feugiat. Nam vitae ex ac magna lobortis faucibus. Nam porttitor leo vitae finibus ornare. Proin malesuada lacus nec risus tempus ultrices sed ut libero. estibulum lacinia iaculis risus, ac auctor tellus congue viverra. Vestibulum in neque eget felis semper tempus sed et neque. Praesent lacinia a nulla ac rutrum. Ut convallis velit eu est malesuada viverra.</p>
+      <section><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus iaculis leo ut accumsan consectetur. Nunc metus elit, vehicula non volutpat eu, finibus at purus. Proin ultricies nunc urna, a ornare risus dictum ut. Pellentesque elementum lectus at augue mollis, id efficitur diam volutpat. Mauris quis lobortis diam. Donec elementum purus in erat sollicitudin accumsan. Phasellus dolor felis, consequat consequat nisl quis, pellentesque varius justo. Integer tempor arcu accumsan augue vehicula, consequat facilisis sem feugiat. Nam vitae ex ac magna lobortis faucibus. Nam porttitor leo vitae finibus ornare. Proin malesuada lacus nec risus tempus ultrices sed ut libero. estibulum lacinia iaculis risus, ac auctor tellus congue viverra. Vestibulum in neque eget felis semper tempus sed et neque. Praesent lacinia a nulla ac rutrum. Ut convallis velit eu est malesuada viverra.</p></section>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus iaculis leo ut accumsan consectetur. Nunc metus elit, vehicula non volutpat eu, finibus at purus. Proin ultricies nunc urna, a ornare risus dictum ut. Pellentesque elementum lectus at augue mollis, id efficitur diam volutpat. Mauris quis lobortis diam. Donec elementum purus in erat sollicitudin accumsan. Phasellus dolor felis, consequat consequat nisl quis, pellentesque varius justo. Integer tempor arcu accumsan augue vehicula, consequat facilisis sem feugiat. Nam vitae ex ac magna lobortis faucibus. Nam porttitor leo vitae finibus ornare. Proin malesuada lacus nec risus tempus ultrices sed ut libero. estibulum lacinia iaculis risus, ac auctor tellus congue viverra. Vestibulum in neque eget felis semper tempus sed et neque. Praesent lacinia a nulla ac rutrum. Ut convallis velit eu est malesuada viverra.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus iaculis leo ut accumsan consectetur. Nunc metus elit, vehicula non volutpat eu, finibus at purus. Proin ultricies nunc urna, a ornare risus dictum ut. Pellentesque elementum lectus at augue mollis, id efficitur diam volutpat. Mauris quis lobortis diam. Donec elementum purus in erat sollicitudin accumsan. Phasellus dolor felis, consequat consequat nisl quis, pellentesque varius justo. Integer tempor arcu accumsan augue vehicula, consequat facilisis sem feugiat. Nam vitae ex ac magna lobortis faucibus. Nam porttitor leo vitae finibus ornare. Proin malesuada lacus nec risus tempus ultrices sed ut libero. estibulum lacinia iaculis risus, ac auctor tellus congue viverra. Vestibulum in neque eget felis semper tempus sed et neque. Praesent lacinia a nulla ac rutrum. Ut convallis velit eu est malesuada viverra.</p>
+
+    <div>
+      <h1>Child Selector</h1>
+      <div>
+        <p>Paragraph 1 in the div.</p>
+        <p>Paragraph 2 in the div.</p>
+        <section><p>Paragraph 3 in the div.</p></section> <!-- not Child but Descendant -->
+        <p>Paragraph 4 in the div.</p>
+      </div>
+      
+      <p>Paragraph 5. Not in a div.</p>
+      <p>Paragraph 6. Not in a div.</p>
     </div>
   </body>
 </html>
