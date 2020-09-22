@@ -1,0 +1,8 @@
+These are the fonts used in the template:
+
+- Open Sans [http://www.google.com/fonts/specimen/Open+Sans]
+
+To use the AI or EPS files you must download and install the fonts on your computer.
+For the HTML version this is not required as the fonts are loaded directly from Google Fonts repository.
+
+All fonts are open source and can be used for personal or commercial purposes free of charge.
