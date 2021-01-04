@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BMI Calculator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .pos-star1 {
+            top: 50px;
+            left: 50px;
+        }
+
+        .pos-star2 {
+            top: 100px;
+            left: 100px;
+        }
+
+        .pos-star3 {
+            top: 50px;
+            left: 150px;
+        }
+
+        .pos-star4 {
+            top: 50px;
+            right: 50px;
+        }
+
+        .pos-star5 {
+            top: 100px;
+            right: 100px;
+        }
+
+        .pos-star6 {
+            top: 50px;
+            right: 150px;
+        }
+
+
+        .star {
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            display: block;
+            border-radius: 50%;
+            float: left;
+            position: absolute;
+            transform-origin: 50% 50%;
+            animation-name: star3;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease;
+            transform-origin: 50% 50%;
+            transition: all 0.3s ease-out;
+        }
+
+        .star:before {
+            width: 20px;
+            height: 20px;
+            content: "";
+            background-color: red;
+            position: absolute;
+            transform: scale(1, 2) rotate(45deg);
+            animation-name: star1;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-out;
+            border-radius: 20%;
+            transition: all 0.3s ease-out;
+        }
+
+        .star:after {
+            width: 20px;
+            height: 20px;
+            content: "";
+            background-color: red;
+            position: absolute;
+            transform: scale(2, 1) rotate(45deg);
+            animation-name: star2;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-out;
+            animation-delay: 0.2s;
+            border-radius: 20%;
+            transition: all 0.3s ease-out;
+        }
+
+        @keyframes star1 {
+            0% {
+                transform: scale(1, 2) rotate(45deg);
+            }
+
+            50% {
+                transform: scale(1, 1) rotate(45deg);
+            }
+
+            100% {
+                transform: scale(1, 2) rotate(45deg);
+            }
+        }
+
+        @keyframes star2 {
+            0% {
+                transform: scale(2, 1) rotate(45deg);
+            }
+
+            50% {
+                transform: scale(1, 1) rotate(45deg);
+            }
+
+            100% {
+                transform: scale(2, 1) rotate(45deg);
+            }
+        }
+
+        @keyframes star3 {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="star pos-star1 "></div>
+    <div class="star pos-star2 "></div>
+    <div class="star pos-star3 "></div>
+    <div class="star pos-star4 "></div>
+    <div class="star pos-star5 "></div>
+    <div class="star pos-star6 "></div>
+    <div class="header">
+        <h1>Calculators</h1>
+    </div>
+
+    <!-- The flexible grid (content) -->
+    <div class="row">
+        <div class="side">
+            <ul>
+                <li><a class="active" href="#">BMI Calculator</a></li>
+                <li><a href="#">Age Calculator</a></li>
+                <li><a href="#">Fahrenheit to Celsius</a></li>
+                <li><a href="#">Meters to Feet</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <h2 style="text-align: center;">BMI Calculator</h2>
+            <hr>
+            <div id="input-row">
+                <div class="input-area">
+                    <div>
+                        <div class="input-lable">
+                            <label for="">Height:</label>
+                        </div>
+                        <div class="input">
+                            <input type="number" id="txtHeight">
+                        </div>
+                        <div>
+                            <select id="height-unit">
+                                <option value="volvo">Meter</option>
+                                <option value="saab">Centimeter</option>
+                                <option value="vw">Feet</option>
+                                <option value="audi" selected>Inch</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="input-lable">
+                            <label for="">Weight:</label>
+                        </div>
+                        <div class="input">
+                            <input type="number" id="txtWeight">
+                        </div>
+                        <div>
+                            <select id="Weight-unit">
+                                <option value="volvo">KG</option>
+                                <option value="saab">Pound</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="input-lable">
+
+                        </div>
+                        <div class="input">
+                            <button class="button"><i class="fa fa-calculator"></i> Calculate BMI</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="stage" style="width: 120px; height: 120px;">
+                    <div class="spinner" style="float: right;">
+                        <div class="face1">1</div>
+                        <div class="face2">2</div>
+                        <div class="face3">3</div>
+                        <div class="face4">4</div>
+                        <div class="face5">5</div>
+                        <div class="face6">6</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <h2>&copy; 2021</h2>
+    </div>
+
+</body>
+
+</html>

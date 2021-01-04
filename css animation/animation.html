@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--
+            Keyframes hold what styles the element will have 
+            at certain times. 
+            When you specify CSS styles inside the @keyframes rule, the animation will gradually change from the current style to the new style at certain times.
+            To get an animation to work, you must bind the animation to an element.
+
+    -->
+    <style>
+        /* The animation code */
+        @keyframes example {
+            from {background-color: red;left:0px; top:0px;}
+            to {background-color: yellow;left:50px; top:50px;}
+        }   
+
+        /* The element to apply the animation to */
+        #div-1 {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: example;
+            animation-duration: 4s;
+        }   
+
+        @keyframes anchor-moving {
+            0% {
+                background-color: red;left:0px;
+            }
+            50% {
+                background-color: indigo;left:100%;
+            }
+            100% {
+                background-color: white;left:0px;
+            }
+        }
+
+        @keyframes anchor-moving-infi {
+            0% {
+                background-color: #F93106;left:0px;
+            }
+            50% {
+                background-color: #B84931;left:100%;
+            }
+            100% {
+                background-color: #825146;left:0px;
+            }
+        }
+
+        #links > a{
+            position: relative;
+            line-height: 50px;
+            border: solid green;
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+            animation-name: anchor-moving;
+            animation-duration: 6s;
+        }
+
+        #links-2 > a{
+            position: relative;
+            line-height: 50px;
+            text-decoration: none;
+            border-radius: 10px;
+            color: black;
+            padding: 10px;
+            animation-name: anchor-moving-infi;
+            animation-duration: 8s;
+            animation-iteration-count: infinite; 
+        }
+    </style>
+</head>
+<body>
+    <div id="div-1">
+
+    </div>
+
+    <div id="links">
+        <a href="#">Animation</a>
+    </div>
+
+    <div id="links-2">
+        <a href="#">Animation</a>
+    </div>
+</body>
+</html>
