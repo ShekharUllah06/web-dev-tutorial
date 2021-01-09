@@ -1,0 +1,18 @@
+Java Script Fundamentals
+-------------------------------------
+ => Intorduction
+ => Variables
+ => Operators
+ => Data Types
+ => Functions
+ => Events
+ => Array
+ => Conditional Statements
+ => Loop
+ => DOM
+
+Exercises
+ => Calculators
+ => Html Canvas Drawing
+ => Geo Locations
+ => Web Storage
