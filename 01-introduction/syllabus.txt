@@ -16,3 +16,81 @@ Exercises
  => Html Canvas Drawing
  => Geo Locations
  => Web Storage
+
+PHP Fundamentals
+-------------------------------------
+INTRODUCTION TO PHP
+
+PHP Intro
+PHP Install
+PHP Syntax
+PHP Variables
+PHP Echo / Print
+PHP Data Types
+PHP Strings
+PHP Constants
+PHP Operators
+
+HANDLING HTML FORM WITH PHP
+
+PHP Form Handling
+PHP Form Validation
+PHP Form Required
+PHP Form URL/E-mail
+PHP Form Complete
+DECISIONS AND LOOP
+Making Decisions
+Doing Repetitive task with looping
+Mixing Decisions and looping with Html
+PHP If…Else…Elseif
+PHP Switch
+PHP While Loops
+PHP For Loops
+
+FUNCTION
+
+What is a function
+Define a function
+Call by value and Call by reference
+Recursive 
+
+STRING
+
+Creating and accessing String
+Searching & Replacing String
+Formatting String
+String Related Library function
+ARRAY
+
+Anatomy of an Array
+Creating index based and Associative array
+Accessing array Element
+Looping with Index based array
+Looping with associative array using each() and foreach()
+Some useful Library function
+WORKING WITH FILE AND DIRECTORIES
+Understanding file& directory
+Opening and closing a file
+Coping ,renaming and deleting a file
+Working with directories
+Building a text editor
+File Uploading & Downloading
+
+STATE MANAGEMENT
+
+Using query string(URL rewriting)
+Using Hidden field
+Using cookies
+Using session
+
+STRING MATCHING WITH REGULAR EXPRESSION
+What is regular expression
+Pattern matching in Php
+Replacing text
+Splitting a string with a Regular Expression
+DATABASE CONNECTIVITY WITH MYSQL
+Introduction to RDBMS
+Connection with MySql Database
+Performing basic database operation(DML) (Insert, Delete, Update, Select)
+
+
