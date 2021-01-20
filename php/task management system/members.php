@@ -13,7 +13,7 @@
         if (isset($_REQUEST['edit'])) {
             $update = true;
             $id = $_REQUEST['edit'];
-            $update = true;
+            
             $record = mysqli_query($con, "SELECT * FROM members WHERE user_id=$id");
             
             if (mysqli_num_rows($record) ==1) {
@@ -29,6 +29,10 @@
                 
             }
     
+        }
+        if (isset($_REQUEST['delete'])){
+            $id = $_REQUEST['delete'];
+            mysqli_query($con, "DELETE  FROM members WHERE user_id=$id");
         }
         if($_SERVER["REQUEST_METHOD"]=="POST"){
             
@@ -433,8 +437,10 @@
                                     echo "<td>".$row["email"]."</td>";
                                     echo "<td>".$row["password"]."</td>";
 
-                                    echo "<td><a href=members.php?edit='".$row["user_id"]."'>Edit</a></td>";
-                                    echo "<td><a href='#'>Delete</a></td>";
+                                    echo "<td><a href=members.php?edit='".urlencode($row["user_id"])."'>Edit</a></td>";
+                                    
+                                    echo "<td><a onClick=\"javascript: return confirm('Please confirm deletion');\" href=members.php?delete='".urlencode($row["user_id"])."'>Delete</a></td><tr>";
+
                                 echo "</tr>";
                             }
                         }
