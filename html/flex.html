@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .column1 {
+            flex: 30%;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+
+        .column2 {
+            flex: 70%;
+            background-color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="column1">
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco.</p>
+        </div>
+        <div class="column2">
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco.</p>
+        </div>
+    </div>
+    
+</body>
+
+</html>
